@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<meta charset="UTF-8">
+<title>E-sport.ro</title>
+<link href="stil.css" rel="stylesheet">
+
+</head>
+<body>
+   <div id="continut">
+
+<header>
+<a class="titlu" href="index.html">
+<img src="imagini/titlu.png" alt="titlu" style="width:1377px;height:225px;"></a>
+
+</header>
+<div id="continut_pag">
+<main>
+<h1> Ofertele lunii</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="text">Minge Nike Strike 400 lei</div>
+  <img src="imagini/balon-nike-strike.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="text">Racheta de tenis Wilson Blade Team 500 lei</div>
+  <img src="imagini/wilson-blade-team.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="text">Minge de handbal Hummel Concept 330 lei</div>
+  <img src="imagini/hummel concept.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="text">Skiuri atomic redster G9 2700 lei</div>
+  <img src="imagini/atomic redster.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); 
+}
+</script>
+</main>
+ <nav> <!-- Plasat pe coloana din dreapta! -->
+     <h1>Sporturi</h1>
+       <ul>
+         <li><a class="link" href="Fotbal.php">Fotbal</li></a>
+         <li><a class="link" href="Tenis.php">Tenis</li></a>
+         <li><a class="link" href="Handbal.php">Handbal</li></a>
+         <li><a class="link" href="Ski.php">Ski</li></a>
+       </ul>
+       <h1>Admin</h1>
+       <ul>
+       <li><a class="link" href="login.html">Baza de date</li></a>
+       <ul>
+       </nav>
+       </div>
+<footer>
+   <p style="font-family:arial; color: white; font-size: 150%">Site proiectat de Vădan Radu Dan.
+     © I.A.P. 2019 </p>
+  </footer>
+</body>
+</html>
